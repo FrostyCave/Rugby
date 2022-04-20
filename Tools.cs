@@ -3,17 +3,17 @@
     public class Tools
     {
         public static int counter;
-        public static void PrintArray(string[] input)
+        public static void PrintArray(List<string> input)
         {
             foreach (var item in input) 
             {
                 Console.WriteLine(item);
             }
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < input.Count; i++)
             {
                 Console.WriteLine(input[i] + " ");
             }
-            while (counter < input.Length)
+            while (counter < input.Count)
             {
                 Console.WriteLine(input[counter]);
                 counter++;
